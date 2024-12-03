@@ -1,0 +1,15 @@
+# Ignore sensitive config files
+config.php
+.env
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore log and cache files
+*.log
+/cache/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db

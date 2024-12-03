@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;   
+    position: relative; 
+    top:5%;
+    left:33%;
+}
+
+.login-signup-container {
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#form-container {
+    width: 100%;
+}
+
+.form {
+    display: none;
+}
+
+#login-form, #signup-form {
+    display: block;
+}
+
+.login-signup-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.login-signup-container h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-decoration: overline underline;
+}
+
+.text {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.login-signup-container p {
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.notice {
+    margin-top: 30px;
+    background-color: #fff9c4;
+    position: absolute;
+    /* float:right; */
+    left: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.notice p {
+    margin: 10px 0;
+}
+.notice h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f57f17;
+}
+.notice ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notice ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notice ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

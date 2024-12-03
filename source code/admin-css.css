@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar h2 {
+    text-align: center;
+    color: #fff;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main-content h1 {
+    margin-top: 0;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.card table, .card th, .card td {
+    border: 1px solid #ddd;
+}
+.card th, .card td {
+    padding: 5px;
+    text-align: left;
+}
+.card th {
+    background-color: #f2f2f2;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group .updateBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group .addBtn{
+    padding: 10px 20px;
+    background-color: rgb(10, 185, 86); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group .addBtn:hover,
+.form-group .updateBtn:hover {
+    background-color:gray;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.stat-card {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+.stat-card h3 {
+    margin: 0;
+    font-size: 2em;
+}
+.stat-card p {
+    margin: 5px 0 0;
+}
+.edit-btn{
+    text-decoration: none;
+    color:#fff;
+    border-radius: 10px;
+    padding:10px;
+    background: #007bff;
+    
+}
+.delete-btn{
+    text-decoration: none;
+    color:#fff;
+    background-color: red;
+    padding:10px;
+    border-radius: 10px;
+    width:30px;
+    height:30px;
+}
+.edit-btn:hover, .delete-btn:hover{
+    background-color:darkgrey;
+}

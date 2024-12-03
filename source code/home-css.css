@@ -1,0 +1,260 @@
+body, html{
+margin: 0;
+padding: 0;
+width:100%;
+overflow-x: hidden;
+}
+
+.image{
+  height:100vh;
+  position: relative;
+  background-image: url(b.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: -1%;
+  margin-right: -0.5%;
+  border-radius: 40px;
+}
+.image p{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-80%, -50%);
+  color:snow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Platypi", Sans-serif;
+  font-optical-sizing: auto;
+  text-align: justify;
+}
+.image a{
+  position: absolute;
+  top:85%;
+  left:17%;
+  transform:translate(-80%, -17%);
+  background-color:#141515;
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  border: 1px solid;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.image a:hover{
+  background-color: #26da7a;
+  transition: 1s;
+}
+.collection{
+  width:80%;
+  margin:auto;
+  text-align: center;
+  padding-top:50px;
+}
+.collection h1{
+  font-size: 50px;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row{
+  margin-top:5%;
+  justify-content:space-between;
+  display: flex;
+  align-items:center;
+}
+.collection-col{
+  flex:1;
+  position: relative;
+}
+.collection-col:hover img{
+  opacity:0.8;
+  transition: 0.3s;
+}
+.collection-col img{
+  width:250px;
+  height:400px;
+}
+.collection-col a{
+  position:absolute;
+  top:40%;
+  left:50%;
+  display:block;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  background-color: #313331;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  visibility:hidden;
+  text-decoration: none;  
+}
+.collection-col a:hover{
+  background-color: #1ccebc;
+}
+.collection-col:hover a{
+  visibility:visible; 
+  
+}
+.title{
+  margin:10px 0 10px 0;
+}
+.price{
+  font-weight: bold;
+  margin:0 0 10px 0;
+}
+.btn-container{
+  position: absolute;
+}
+.btn{
+  padding:10px 12px;
+  text-transform: uppercase;
+  color:#ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #313331;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 11px;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: #1ccebc;
+}
+
+/* shop page */
+
+.text{
+  text-align: center;
+  padding-top:50px 0px;
+  font-size: 45px;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main{
+  width:1320px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+}
+.categoryPanel{
+  flex-basis: 23%;
+}
+.categoryItems label{
+  display:block;
+  padding:5px 0px;
+}
+.products{
+  flex-basis: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productItems{
+  flex-basis:31%;
+  margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.productItems h3{
+  text-align: center;
+  margin:10px 0 5px 0;
+}
+.productItems a:hover{
+  opacity:0.5;
+  transition: 0.3s;
+}
+.button-1{
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  padding:5px;
+  background-color: #313331;
+  color:aliceblue;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+.button-1:hover{
+  background-color: #1ccebc;
+}
+
+
+/* single product */
+
+.product-page {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  /* border:2px solid; */
+  justify-content: space-between;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 100px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  flex: 2;
+  padding: 20px 10px 0px;
+}
+
+.product-details h1 {
+  margin-top: 0;
+  font-size: 2em;
+  height: auto;
+}
+
+.product-details .price {
+  font-size: 1.5em;
+  color: #e67e22;
+  margin: 10px 0;
+}
+
+.product-details .description {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.product-details .buy-now{
+  padding:10px 12px;
+  border-radius: 5px;
+  background-color: #313331;
+  color:azure;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-left: auto;
+  display: block;
+}
+.product-details .divider{
+  margin-top: 30px;
+  border-top: 1px solid #bbb;
+  
+}
+ .text-one{
+  display: flex;
+  max-width: 500px;
+  justify-content: flex-start;
+  width:400px;
+}
+.categories{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.categories-text{
+  font-size: 14px;
+  margin-left: 20px;
+}
